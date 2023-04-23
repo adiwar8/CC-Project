@@ -1,10 +1,10 @@
 import { createPool } from 'mysql2/promise';
 
 export const pool = createPool({
-    host: process.env.HOST,
+    host: 'web-db.czwhh69hr7aj.ap-southeast-2.rds.amazonaws.com',
     port: process.env.PORT,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
+    user: 'admin',
+    password: 'abcd1234',
+    database: 'todolist',
 })
 
